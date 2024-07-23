@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Shopz - Your One-Stop Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">MC Shopz</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                    <li><a href="#electronics">Electronics</a></li>
+                    <li><a href="#grocery">Grocery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="featured-product">
+            <h2>Featured Product</h2>
+            <div class="product">
+                <div class="product-image">
+                    <img src="https://m.media-amazon.com/images/I/61SSVxTSs3L._AC_UY218_.jpg" alt="Smart Watch" id="main-image">
+                    <div class="thumbnail-container">
+                        <img src="https://m.media-amazon.com/images/I/61SSVxTSs3L._AC_UY218_.jpg" alt="Thumbnail 1" class="thumbnail" onclick="changeImage(this.src)">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.z8FnZH-EdzeOPJLvW86V_QAAAA&pid=Api&P=0&h=180" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this.src)">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.DGqf1jGToFaUTjCGKL5qIAHaHa&pid=Api&P=0&h=180" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this.src)">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>Smart Watch X1</h1>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                    <p class="price">₹14,999</p>
+                    <p class="description">Stay connected and track your fitness with our latest Smart Watch X1. Features include heart rate monitoring, GPS, and a vibrant OLED display.</p>
+                    <div class="cta-buttons">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" id="men">
+            <h2>Men's Fashion</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35" alt="Men's Suit">
+                    <h3>Classic Fit Suit</h3>
+                    <p class="price">₹22,999</p>
+                    <p class="description">Elevate your style with our premium classic fit suit. Perfect for formal occasions and business meetings.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Men's Sneakers">
+                    <h3>Comfortable Sneakers</h3>
+                    <p class="price">₹6,999</p>
+                    <p class="description">Step into comfort with our stylish sneakers. Ideal for casual outings and light workouts.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5" alt="Men's Jacket">
+                    <h3>Leather Jacket</h3>
+                    <p class="price">₹15,999</p>
+                    <p class="description">Add a touch of rugged charm to your wardrobe with our genuine leather jacket. Perfect for those cool evenings.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" id="women">
+            <h2>Women's Fashion</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1" alt="Women's Dress">
+                    <h3>Floral Summer Dress</h3>
+                    <p class="price">₹5,999</p>
+                    <p class="description">Embrace the summer vibes with our beautiful floral dress. Light, airy, and perfect for any daytime event.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3" alt="Women's Handbag">
+                    <h3>Designer Handbag</h3>
+                    <p class="price">₹9,999</p>
+                    <p class="description">Carry your essentials in style with our chic designer handbag. Spacious and fashionable for every occasion.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2" alt="Women's Heels">
+                    <h3>Elegant High Heels</h3>
+                    <p class="price">₹7,999</p>
+                    <p class="description">Step out in confidence with our elegant high heels. Designed for comfort and style, perfect for formal events.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" id="accessories">
+            <h2>Accessories</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f" alt="Sunglasses">
+                    <h3>Designer Sunglasses</h3>
+                    <p class="price">₹11,999</p>
+                    <p class="description">Protect your eyes in style with our designer sunglasses. UV protection meets fashion in this must-have accessory.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49" alt="Watch">
+                    <h3>Luxury Wristwatch</h3>
+                    <p class="price">₹22,999</p>
+                    <p class="description">Make a statement with our luxury wristwatch. Precision timekeeping meets exquisite design.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1624222247344-550fb60583dc" alt="Belt">
+                    <h3>Leather Belt</h3>
+                    <p class="price">₹3,999</p>
+                    <p class="description">Complete your look with our premium leather belt. Durable, stylish, and versatile for any outfit.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" id="electronics">
+            <h2>Electronics</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UY218_.jpg" alt="Smartphone">
+                    <h3>Latest Smartphone</h3>
+                    <p class="price">₹59,999</p>
+                    <p class="description">Experience cutting-edge technology with our latest smartphone. High-performance camera and long-lasting battery.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._AC_UY218_.jpg" alt="Laptop">
+                    <h3>Ultra-thin Laptop</h3>
+                    <p class="price">₹99,999</p>
+                    <p class="description">Power and portability combined in our ultra-thin laptop. Perfect for work and entertainment on-the-go.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61kWB+uzR2L._AC_UY218_.jpg" alt="Headphones">
+                    <h3>Noise-Cancelling Headphones</h3>
+                    <p class="price">₹18,999</p>
+                    <p class="description">Immerse yourself in your music with our premium noise-cancelling headphones. Crystal clear audio and comfort for hours.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category" id="grocery">
+            <h2>Grocery</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf" alt="Organic Fruits">
+                    <h3>Organic Fruit Basket</h3>
+                    <p class="price">₹2,299</p>
+                    <p class="description">Enjoy a selection of fresh, organic fruits. Perfect for a healthy snack or a thoughtful gift.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e" alt="Coffee Beans">
+                    <h3>Gourmet Coffee Beans</h3>
+                    <p class="price">₹1,499</p>
+                    <p class="description">Start your day right with our premium gourmet coffee beans. Rich aroma and full-bodied flavor in every cup.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5" alt="Olive Oil">
+                    <h3>Extra Virgin Olive Oil</h3>
+                    <p class="price">₹1,199</p>
+                    <p class="description">Enhance your culinary creations with our extra virgin olive oil. Cold-pressed for maximum flavor and health benefits.</p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MC Shopz. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('main-image').src = src;
+        }
+    </script>
+</body>
+</html>
